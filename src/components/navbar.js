@@ -13,7 +13,7 @@ function Navbar() {
     };
 
     return (
-        <nav className="flex flex-row justify-between items-center h-auto sm:h-auto  bg-black text-white px-8 sm:px-16 ">
+        <nav className="flex flex-row justify-between items-center h-auto sm:h-auto  bg-[#2AA7FF] text-white px-8 sm:px-16 ">
             {/* Logo Section */}
             <div className="flex items-start w-full sm:w-auto mt-5">
                 <img src={LogoSvg} alt="Logo" className="h-10 sm:h-16" />

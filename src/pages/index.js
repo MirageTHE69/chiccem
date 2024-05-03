@@ -5,6 +5,10 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Topnavbar from "../components/topnavbar"
 import Navbar from "../components/navbar"
+import HeroSection from "../components/herosection"
+import Offers from "../components/offers"
+import Speciality from "../components/specaility"
+import Services from "../components/services"
 
 
 const IndexPage = () => (
@@ -13,6 +17,11 @@ const IndexPage = () => (
   <div className=" min-w-screen h-screen">
     <Topnavbar/>
     <Navbar/>
+    <HeroSection/>
+    <Offers/>
+    <h1 className=" w-full text-2xl flex items-center justify-center mt-16 font-bold" >Essential Features</h1>
+    <Speciality/>
+    <Services/>
 
   </div>
 )

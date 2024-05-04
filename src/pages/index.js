@@ -9,6 +9,8 @@ import HeroSection from "../components/herosection"
 import Offers from "../components/offers"
 import Speciality from "../components/specaility"
 import Services from "../components/services"
+import TeamMember from "../components/team"
+import InfoSection from "../components/infosection"
 
 
 const IndexPage = () => (
@@ -22,6 +24,8 @@ const IndexPage = () => (
     <h1 className=" w-full text-2xl flex items-center justify-center mt-16 font-bold" >Essential Features</h1>
     <Speciality/>
     <Services/>
+    <InfoSection/>
+    
 
   </div>
 )

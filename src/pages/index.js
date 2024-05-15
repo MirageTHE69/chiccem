@@ -11,6 +11,11 @@ import Speciality from "../components/specaility"
 import Services from "../components/services"
 import TeamMember from "../components/team"
 import InfoSection from "../components/infosection"
+import SpineSection from "../components/spinesection"
+import ProductSection from "../components/productsSections"
+import Faq from "../components/faq"
+import Footer from "../components/footer"
+import Book from "../components/book"
 
 
 const IndexPage = () => (
@@ -25,6 +30,11 @@ const IndexPage = () => (
     <Speciality/>
     <Services/>
     <InfoSection/>
+    <SpineSection/>
+    <ProductSection/>
+    <Faq/>
+    <Book/>
+    <Footer/>
     
 
   </div>

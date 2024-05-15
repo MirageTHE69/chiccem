@@ -1,5 +1,5 @@
 import React from "react";
-import TeamCard from "./TeamCard";
+import TeamCard from "./teamcard";
 import teamMember1 from "../images/doc1.svg";
 import teamMember2 from "../images/doc2.svg";
 import teamMember3 from "../images/doc1.svg";

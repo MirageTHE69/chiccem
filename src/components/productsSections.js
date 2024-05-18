@@ -45,41 +45,39 @@ const ProductsPage = () => {
           Centers in Gujarat, Rajasthan, Punjab & Maharashtra.
         </p>
       </div>
-      <div className="h-full w-full px-10 py-20">
-        <div className="grid grid-cols-3 gap-10">
-          {products.map((product, index) => (
-            <div
-              key={index}
-              className="w-full bg-[#2AA7FF] flex flex-col justify-between items-center text-black rounded-xl p-6"
+      <div className="container mx-auto px-4 py-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+        {products.map((product, index) => (
+          <div
+            key={index}
+            className="bg-[#2AA7FF] flex flex-col justify-between items-center text-black rounded-xl p-6"
+          >
+            {/* Title */}
+            <h2 className="text-xl font-bold mb-2 text-white">{product.title}</h2>
+            {/* Button */}
+            <button
+              onClick={() => handleBookClick(product)}
+              className="bg-white text-black px-10 mt-4 py-2 rounded-md mb-2"
             >
-              {/* Title */}
-              <h2 className="text-xl font-bold mb-2 text-white">{product.title}</h2>
-              {/* Button */}
-              <button
-                onClick={() => handleBookClick(product)}
-                className="bg-white text-black px-10 mt-4 py-2 rounded-md mb-2"
-              >
-                Book
-              </button>
-              {/* Divider */}
-              <div className="w-full h-1 bg-white mb-2"></div>
-              {/* Image */}
-              <img
-                src={product.imageUrl}
-                alt={product.title}
-                className="object-cover"
-              />
-            </div>
-          ))}
-        </div>
+              Book
+            </button>
+            {/* Divider */}
+            <div className="w-full h-1 bg-white mb-2"></div>
+            {/* Image */}
+            <img
+              src={product.imageUrl}
+              alt={product.title}
+              className="object-cover w-full h-40 sm:h-auto"
+            />
+          </div>
+        ))}
       </div>
 
       {/* Dialog Box */}
       {selectedProduct && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
-          <div className="bg-white rounded-lg p-6 w-1/3">
+          <div className="bg-white rounded-lg p-6 w-full max-w-md">
             <h2 className="text-xl font-bold mb-4">{selectedProduct.title}</h2>
-            <img src={selectedProduct.imageUrl} alt={selectedProduct.title} className="object-cover mb-4" />
+            <img src={selectedProduct.imageUrl} alt={selectedProduct.title} className="object-cover mb-4 w-full h-40 sm:h-auto" />
             <p className="mb-4">{selectedProduct.description}</p>
             <div className="mb-4">
               <label className="block text-sm font-medium mb-2" htmlFor="name">Name</label>
@@ -105,13 +103,13 @@ const ProductsPage = () => {
             </div>
             <button
               onClick={handleBooking}
-              className="bg-blue-500 text-white px-4 py-2 rounded-md"
+              className="bg-blue-500 text-white px-4 py-2 rounded-md mr-2"
             >
               Book
             </button>
             <button
               onClick={() => setSelectedProduct(null)}
-              className="ml-2 bg-gray-500 text-white px-4 py-2 rounded-md"
+              className="bg-gray-500 text-white px-4 py-2 rounded-md"
             >
               Cancel
             </button>

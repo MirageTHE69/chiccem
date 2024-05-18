@@ -51,7 +51,7 @@ function Navbar() {
                                 smooth={true}
                                 offset={-80}
                                 duration={500}
-                                activeClass="font-bold text-blue-900"
+                                activeClass="font-bold text-white"
                                 style={{ textDecoration: 'none' }}
                                 onClick={toggleMenu}
                             >

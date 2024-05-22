@@ -4,6 +4,7 @@ import LocationSvg from "../images/location.svg";
 import PhoneSvg from "../images/phone_round.svg";
 import MailSvg from "../images/mail_round.svg";
 import WhatsAppSvg from "../images/whatsapp.svg";
+import { Link } from "gatsby";
 
 
 
@@ -23,7 +24,8 @@ function Book(){
                 </div>
                 <div className="w-full h-full flex flex-col items-start justify-center gap-3 mt-4">
                   <span className="text-white text-lg font-bold font-Ls">Address</span>
-                  <span className="text-white text-sm font-light font-Jost capitalize">PLOT NO 375, SAIRAJ COMPLEX, GADMUDSHINGI, TAL. KARVEER, DIST KOLHAPUR, 416119</span>
+                  <Link to = "https://www.google.com/maps/place/CHICCEM+MEDICAL+PVT.+LTD./@22.3221779,73.2119801,18z/data=!3m1!4b1!4m6!3m5!1s0x395fcf133b987f85:0x3a1119d48261a17d!8m2!3d22.3221764!4d73.2127456!16s%2Fg%2F11cn17zft6?entry=ttu">
+                  <span className="text-white text-sm font-light font-Jost capitalize w-[90%]">301-303, Narayan Elegance-2, B/s Axis Bank, Near Sangam Char Rasta, Harni Road, Vadodara-390022.</span></Link>
                 </div>
               </div>
               <div className="w-full flex flex-row mt-5">
@@ -32,7 +34,9 @@ function Book(){
                 </div>
                 <div className="w-full h-full flex flex-col items-start justify-center gap-3">
                   <span className="text-white text-lg font-bold font-Ls">Phone number</span>
-                  <span className="text-white text-sm font-light font-Jost">+91 93252 62697</span>
+                  <Link to = "tel:+1234567890">
+                  <span className="text-white text-sm font-light font-Jost">91-8898893893</span>
+                  </Link>
                 </div>
               </div>
               <div className="w-full flex flex-row mt-5">
@@ -41,7 +45,9 @@ function Book(){
                 </div>
                 <div className="w-full h-full flex flex-col items-start justify-center gap-3">
                   <span className="text-white text-lg font-bold font-Ls">Email Address</span>
-                  <span className="text-white text-sm font-light font-Jost">contact@tech-idea.co.in</span>
+                  <Link to = "mailto:admin@chiccem.com">
+                  <span className="text-white text-sm font-light font-Jost">admin@chiccem.com</span>
+                  </Link>
                 </div>
               </div>
              

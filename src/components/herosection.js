@@ -12,9 +12,7 @@ function HeroSection() {
         <h1 className="text-2xl md:text-4xl text-black font-bold">
           BENEFITS OF A <span className="text-blue-500">THERMAL MASSAGE BED</span>
         </h1>
-        <p className="text-black text-lg md:text-2xl mt-4">
-          Connect instantly with a 24x7 specialist or choose to video visit a particular doctor.
-        </p>
+        
         <Link to="">
           <button className="bg-blue-500 text-white px-6 md:px-9 py-2 mt-4 text-base md:text-lg rounded-md font-semibold hover:bg-blue-700 hover:text-white transition duration-300">
             Contact Us
